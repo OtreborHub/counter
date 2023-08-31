@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #000000;
+    margin: 0;
+}
+
+button {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    min-width: 10rem;
+}
+
+.title {
+    color: orange;
+}
+
+.col-left {
+    text-align: right;
+    padding: 0rem 5rem;
+}
+
+.col-right {
+    text-align: left;
+    padding: 0rem 5rem;
+}
+
+#counter {
+    font-size: 4rem;
+    font-weight: bold;
+    color: orange;
+}
