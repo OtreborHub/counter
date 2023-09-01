@@ -11,6 +11,10 @@ button {
     min-width: 10rem;
 }
 
+h1 {
+    margin-top: 2rem;
+}
+
 .title {
     color: orange;
 }
