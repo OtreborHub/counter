@@ -65,6 +65,8 @@ increaseButton.innerHTML = `
   Increase
 `;
 
+const br = document.createElement('br');
+
 const decreaseButton = document.createElement('button');
 decreaseButton.id = 'decrease';
 decreaseButton.classList.add('btn', 'btn-outline-light', 'btn-block');
@@ -107,6 +109,7 @@ autoCounterButton.textContent = 'Auto-counter';
 
 // Elements on DOM
 colLeft.appendChild(increaseButton);
+colLeft.appendChild(br);
 colLeft.appendChild(decreaseButton);
 
 colRight.appendChild(counterDisplay);
