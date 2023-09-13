@@ -2,6 +2,7 @@
 let counterValue = 0;
 let autocounterId = null;
 
+// Functions
 function updateCounterDisplay() {
     counterDisplay.textContent = counterValue;
 }
@@ -33,8 +34,8 @@ function resetCounter(){
 }
 
 
-//------------------------------------------------------------------------------------------------------
-// Creazione degli elementi HTML
+//-----------------------------------------------  HTML  ----------------------------------------------
+// Elements HTML creation
 const mainContainer = document.createElement('div');
 mainContainer.classList.add('text-white', 'text-center');
 
@@ -104,7 +105,7 @@ autoCounterButton.id = 'autocounter';
 autoCounterButton.classList.add('btn', 'btn-outline-light', 'btn-block');
 autoCounterButton.textContent = 'Auto-counter';
 
-// Aggiunta degli elementi al DOM
+// Elements on DOM
 colLeft.appendChild(increaseButton);
 colLeft.appendChild(decreaseButton);
 
@@ -123,18 +124,19 @@ manageCounterRow.appendChild(manageCounterColRight);
 
 manageCounterContainer.appendChild(manageCounterRow);
 
-// Aggiunta dei container principali al DOM
+// Main Containers on DOM
 mainContainer.appendChild(h1);
 mainContainer.appendChild(container);
 
 document.body.appendChild(mainContainer);
 document.body.appendChild(manageCounterContainer);
-//------------------------------------------------------------------------------------------------------
-// createTitle(); // Initial display
 
+// Listeners
 decreaseButton.addEventListener('click', decreaseCounter);
 increaseButton.addEventListener('click', increaseCounter);
 autoCounterButton.addEventListener('click', toggleAutocounter);
 resetButton.addEventListener('click', resetCounter);
+
+//------------------------------------------------------------------------------------------------------
 
 updateCounterDisplay(); 
